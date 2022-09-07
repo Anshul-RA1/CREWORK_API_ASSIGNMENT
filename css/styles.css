@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;700;900&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(0deg, rgba(34,37,195,0.6110819327731092) 6%, rgba(93,112,130,1) 39%, rgba(34,193,195,1) 97%);
+  font-family: 'Martel';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  overflow: hidden;
+  margin: 0;
+  
+}
+
+/* Main container styling */
+.container{
+  border-radius: 25px;
+  box-shadow: 3px 3px 30px #B25068;
+  overflow: hidden;
+  width: 300px;
+}
+
+/* Live user filters title styling */
+
+.title{
+  margin: 0;
+  font-weight: 900;
+}
+
+/* Subtitle styling */
+
+.subtitle{
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+  font-weight: 700;
+}
+
+/* Header styling which contains liver user filter and subtitle details and search input*/
+
+.header{
+  background: linear-gradient(0deg, rgba(34,37,195,0.6110819327731092) 6%, rgba(93,112,130,1) 39%, rgba(34,193,195,1) 97%);
+  color: black;
+  padding: 30px 20px;
+}
+
+.header input{
+  background-color: #495C83;
+  border: 3px solid #CFD2CF;
+  border-radius: 50px;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.header input:focus{
+  outline: none;
+}
+
+/* user list section styling */
+
+.user-list{
+  background:  linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(218,227,227,1) 100%);
+  list-style-type: none;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.user-list li{
+  display: flex;
+  padding: 20px;
+}
+
+.user-list img{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.user-list .user-info {
+  margin-left: 10px;
+}
+
+.user-list .user-info h4{
+  margin: 0 0 10px;
+}
+
+.user-list .user-info p{
+  font-size: 12px;
+}
+
+.user-list li:not(:last-of-type){
+  border-bottom: 1px solid #97D2EC;
+}
+
+.user-list li.hide{
+  display: none;
+}
